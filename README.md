@@ -4,9 +4,10 @@ Manage Elastic Cloud Storage (ECS) resources with the ECS command line interface
 # Pull docker image
 
     # docker pull kevkha/ecscli
+    # docker images
 
 # Create config directory on host
-
+Creating local directory to be mapped inside a container to retain ecscli config files on the local host.
 Linux/Mac:
 
     # mkdir -p $HOME/ecscli/config
@@ -17,7 +18,7 @@ Windows:
     
 
 # Start container
-
+Always start `dellemc-ecscli` container and map local directory.
 Linux/Mac:
 
     # docker run -td --restart=always --name dellemc-ecscli -v $HOME/ecscli/config:$HOME kevkha/ecscli
@@ -26,6 +27,12 @@ Windows:
 
     # docker run -td --restart=always --name dellemc-ecscli -v %userprofile%\ecscli\config:$HOME kevkha/ecscli
 
+# List running container
+```
+# docker ps -a
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
+17c84daf618c        kevkha/ecscli       "python2"           4 seconds ago       Up 4 seconds                            dellemc-ecscli
+```
 # Enter container shell
 
     # docker exec -it dellemc-ecscli sh
@@ -42,7 +49,7 @@ Windows:
 
     / # ecscli authenticate
 
-# ECS ecsli usage
+# ECS ecsli usage (as of version 3.1.18)
 ```
 positional arguments:
   {config,authenticate,authentication,baseurl,billing,bucket,cas,datastore,failedzones,keystore,mgmtuserinfo,monitor,nodes,objectuser,objectvpool,nfs,secretkeyuser,system,namespace,varray,vdc_data,vdc,passwordgroup,dashboard,transformation,vdc_keystore,capacity}
