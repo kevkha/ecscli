@@ -54,7 +54,7 @@ CONTAINER ID        IMAGE               COMMAND             CREATED             
 
     / # ecscli authenticate
 
-# ECS ecsli usage (as of version 3.1.18)
+# ECS ecslci usage (as of version 3.1.18)
 ```
 # ecscli --help
 
