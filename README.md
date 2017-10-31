@@ -57,9 +57,6 @@ CONTAINER ID        IMAGE               COMMAND             CREATED             
 # ECS ecsli usage (as of version 3.1.18)
 ```
 # ecscli --help
-Running with config profile: /root/ecscliconfig_cornd_.json
-user: root      host:port: 10.249.250.35:4443
-usage: The ecscli command line tool has a configuration profile that will handle the optional args (ie hostname, port, cookie). However a top level command is required possibly followed by a subcommand and options for that. Please use -h for a list of commands and info
 
 ECS CLI usage
 
