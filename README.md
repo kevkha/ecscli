@@ -97,5 +97,8 @@ optional arguments:
   -v, --version, -version
                         show version number of program and exit
 ```
+# Stop and remove container
+    # docker stop dellemc-ecscli
+    # docker rm dellemc-ecscli
 # Reference
-https://www.emc.com/collateral/TechnicalDocument/docu86294.pdf
+CLI Installation and Configuration Guide https://www.emc.com/collateral/TechnicalDocument/docu86294.pdf
