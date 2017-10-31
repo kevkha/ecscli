@@ -1,23 +1,43 @@
 # Dell EMC ecscli
 Manage Elastic Cloud Storage (ECS) resources with the ECS command line interface (CLI)
 
-To run:
+# Pull docker image
 
     # docker pull kevkha/ecscli
-    # mkdir -p ~/ecscli/config
-    # docker run -td --restart=always --name dellemc-ecscli -v /root/ecscli/config:/root kevkha/ecscli
-    # docker exec -it dellemc-ecscli ecscli --version
 
-Configure the ECS CLI:
+# Create config directory on host
 
-The folllowings commands are executed inside the container.
+Linux/Mac:
+
+    # mkdir -p $HOME/ecscli/config
+
+Windows:
+
+    # mkdir %userprofile%\ecscli\config
+    
+
+# Start container
+
+Linux/Mac:
+
+    # docker run -td --restart=always --name dellemc-ecscli -v $HOME/ecscli/config:$HOME kevkha/ecscli
+
+Windows:
+
+    # docker run -td --restart=always --name dellemc-ecscli -v %userprofile%\ecscli\config:$HOME kevkha/ecscli
+
+# Enter container shell
 
     # docker exec -it dellemc-ecscli sh
+
+# Configure the ECS CLI
+
+    / # ecscli --version
     / # ecscli config -pf demoprofile
     / # ecscli config list
     / # ecscli config set -pf demoprofile
     / # ecscli config delete -pf demoprofile
     
-Authenticate a profile:
+# Authenticate a profile
 
     / # ecscli authenticate
