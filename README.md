@@ -8,6 +8,7 @@ Manage Elastic Cloud Storage (ECS) resources with the ECS command line interface
 
 # Create config directory on host
 Creating local directory to be mapped inside a container to retain ecscli config files on the local host.
+
 Linux/Mac:
 
     # mkdir -p $HOME/ecscli/config
@@ -19,6 +20,7 @@ Windows:
 
 # Start container
 Always start `dellemc-ecscli` container and map local directory.
+
 Linux/Mac:
 
     # docker run -td --restart=always --name dellemc-ecscli -v $HOME/ecscli/config:$HOME kevkha/ecscli
