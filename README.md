@@ -5,5 +5,5 @@ To run:
 
     # docker pull kevkha/ecscli
     # mkdir -p ~/ecscli/config
-    # docker run -td --restart=always --net=host --name dellemc-ecscli -v /root/ecscli/config:/root kevkha/ecscli
+    # docker run -td --restart=always --name dellemc-ecscli -v /root/ecscli/config:/root kevkha/ecscli
     # docker exec -it dellemc-ecscli ecscli --version
