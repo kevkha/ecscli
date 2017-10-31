@@ -1,4 +1,4 @@
-# Dell EMC ecscli
+# Dell EMC ecscli in Docker Container
 Manage Elastic Cloud Storage (ECS) resources with the ECS command line interface (CLI)
 
 # Pull docker image
