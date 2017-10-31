@@ -5,7 +5,10 @@ Manage Elastic Cloud Storage (ECS) resources with the ECS command line interface
 
     # docker pull kevkha/ecscli
     # docker images
-
+```
+REPOSITORY             TAG                 IMAGE ID            CREATED             SIZE
+kevkha/ecscli          latest              e0bfbbea89e6        9 hours ago         86 MB
+```
 # Create config directory on host
 Creating local directory to be mapped inside a container to retain ecscli config files on the local host.
 
